@@ -37,6 +37,7 @@ int main () {
                 editor.Insert(new_fig);
             } catch (std::exception& e) {
                 std::cout << e.what() << '\n';
+                continue;
             }
             std::cout << "Ok\n";
         } else if (command == "remove") {
